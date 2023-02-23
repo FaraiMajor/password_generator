@@ -111,7 +111,7 @@
         left: initial;
         bottom: 5px;
         -webkit-appearance: none;
-        background-color: #273549;
+        background-color: var(--clr-very-dark-blue);
         width: 10px;
         height: 10px;
         border-radius: 20px;
@@ -173,7 +173,7 @@
         height: 39px;
         left: 287px;
         top: 396px;
-        background: #273549;
+        background: var(--clr-dark-blue);
         border-radius: 6px;
         text-align: center;
         padding: 0.5em 1em;

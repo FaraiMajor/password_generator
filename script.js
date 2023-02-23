@@ -10,9 +10,29 @@ const password1El = document.getElementById("password1-el");
 const password2El = document.getElementById("password2-el");
 const slider = document.getElementById("length-slider")
 
+function generatePassword() {
+    let password = "";
+    for (let i = 0; i < passwordLength; i++) {
+        let index = Math.floor(Math.random() * chars.length)
+
+        password += chars[index];
+    }
+    return password
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+// get password length and update value on page
 slider.addEventListener("input", () => {
     let length = slider.value;
     document.getElementById("length-value").textContent = length
