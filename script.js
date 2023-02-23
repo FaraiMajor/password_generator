@@ -13,9 +13,8 @@ const slider = document.getElementById("length-slider")
 
 
 
-function updateTextInput() {
+slider.addEventListener("input", () => {
     let length = slider.value;
     document.getElementById("length-value").textContent = length
-
-}
-updateTextInput()
+    passwordLength = length
+})

@@ -71,7 +71,7 @@
         width: 332px;
         height: 80px;
         left: 52px;
-        top: 115px;
+        top: 100px;
     }
     
     .title-green {
@@ -83,7 +83,7 @@
         width: 372px;
         height: 28px;
         left: 52px;
-        top: 205px;
+        top: 185px;
         /* text-xl/leading-7/font-normal */
         font-family: 'Inter';
         font-style: normal;
@@ -95,24 +95,40 @@
     }
     /* Slider */
     
+    input::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        position: relative;
+        box-sizing: border-box;
+        background: whitesmoke;
+        width: 100%;
+        height: 16px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    input::-webkit-slider-thumb {
+        position: relative;
+        left: initial;
+        bottom: 5px;
+        -webkit-appearance: none;
+        background-color: #273549;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+        box-shadow: -340px 0 0 320px #273549, inset 0 0 0 40px #273549, 340px 0 0 320px #10B981, inset 0 0 0 40px #1597ff;
+        margin-top: 5px;
+    }
+    
     .slider-el {
+        position: absolute;
+        top: 250px;
         left: 52px;
-        top: 250px
+        font-size: small;
+        color: #6B7280;
     }
     
-    #password-slider-text {
-        font-size: 0.95em;
-        color: #1C1C1C;
-        top: 250px
-    }
-    
-    #sliderNumber {
-        font-family: var(--ff-main);
-        color: var(--clr-bright-green);
-    }
-    
-    #slider {
-        display: flex;
+    #length-value {
+        color: #10B981;
     }
     
     button {
@@ -126,7 +142,7 @@
         width: 191px;
         height: 42px;
         left: 52px;
-        top: 284px;
+        top: 294px;
         background: #10B981;
         border-radius: 6px;
         color: #ECFDF5;
