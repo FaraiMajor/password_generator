@@ -1,0 +1,165 @@
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap");
+     :root {
+        --clr-bright-green: #55f991;
+        --clr-dark-green: #10b981;
+        --clr-very-dark-blue: #1f2937;
+        --clr-dark-blue: #273549;
+        --clr-medium-grey: #d5d4d8;
+        --ff-main: "Karla", sans-serif;
+        --ff-serif: "Inter", sans-serif;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    img {
+        display: block;
+        width: 100%;
+    }
+    
+    body {
+        background: #1C1C1C;
+        color: black;
+        font-family: var(--ff-main);
+    }
+    
+    h1 {
+        font-family: var(--ff-main);
+        font-weight: 800;
+        margin: 0.25em 0;
+    }
+    
+    h2 {
+        color: var(--clr-medium-grey);
+        font-size: 1.1em;
+        font-weight: 400;
+        margin-bottom: 1em;
+    }
+    
+    hr {
+        position: absolute;
+        width: 446px;
+        height: 0px;
+        left: 42px;
+        top: 361px;
+        border: 1px solid #D5D4D8;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .container {
+        display: fle;
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        background: #ECFDF5;
+        align-items: center;
+    }
+    
+    .title {
+        position: absolute;
+        width: 332px;
+        height: 80px;
+        left: 52px;
+        top: 115px;
+    }
+    
+    .title-green {
+        color: #10B981;
+    }
+    
+    .supportingTitle {
+        position: absolute;
+        width: 372px;
+        height: 28px;
+        left: 52px;
+        top: 205px;
+        /* text-xl/leading-7/font-normal */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        /* identical to box height, or 140% */
+        color: #6B7280;
+    }
+    /* Slider */
+    
+    .slider-el {
+        left: 52px;
+        top: 250px
+    }
+    
+    #password-slider-text {
+        font-size: 0.95em;
+        color: #1C1C1C;
+        top: 250px
+    }
+    
+    #sliderNumber {
+        font-family: var(--ff-main);
+        color: var(--clr-bright-green);
+    }
+    
+    #slider {
+        display: flex;
+    }
+    
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 9px 17px 9px 15px;
+        gap: 12px;
+        position: absolute;
+        width: 191px;
+        height: 42px;
+        left: 52px;
+        top: 284px;
+        background: #10B981;
+        border-radius: 6px;
+        color: #ECFDF5;
+        border: none;
+    }
+    
+    .passwordSection {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #password1-el {
+        position: absolute;
+        width: 211px;
+        height: 39px;
+        left: 52px;
+        top: 396px;
+        background: #273549;
+        border-radius: 6px;
+        text-align: center;
+        padding: 0.5em 1em;
+        border-radius: 0.25em;
+    }
+    
+    #password2-el {
+        position: absolute;
+        width: 211px;
+        height: 39px;
+        left: 287px;
+        top: 396px;
+        background: #273549;
+        border-radius: 6px;
+        text-align: center;
+        padding: 0.5em 1em;
+        border-radius: 0.25em;
+    }

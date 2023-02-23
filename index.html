@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="generateSection">
+                <h1 class="title">Generate a<br><span class="title-green">random password</span></h1>
+                <h2 class="supportingTitle">Never use an insecure password again.</h2>
+                <div class="slider-el">
+                    <input id="length-slider" type="range" name="rangeInput" min="8" max="20">
+                    <p class="length">Length: <span id="length-value">8</span></p>
+                </div>
+
+                <button class="btn"><i class="fa fa-flash"></i>Generate passwords</button>
+
+            </div>
+
+            <hr>
+            <div class="passwordSection">
+                <div class="generatedPassword" id="password1-el">
+                </div>
+                <div class="generatedPassword" id="password2-el">
+                </div>
+                <div id="letter-main"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
